@@ -1,0 +1,20 @@
+int score[2][5];
+int average[2];
+
+get(score,[0,0],[1,4]);
+
+int i : 0;
+while(2){
+      sort(score[i]);
+      average[i] : avg(score[i],[0],[4]);
+      i : i + 1;
+}
+
+show("");
+show("팀의 평균 점수");
+show(average[0]);
+show(average[1]);
+
+show("");
+show("개인 점수");
+show(score,[0,0],[1,4]);
